@@ -25,9 +25,12 @@ SECRET_KEY = 'django-insecure-%6=uo**1s-_(%w^gr)_p3z)qh$^n)z)hiyipz(efaoohwz1nt+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.201.190.82','195.250.21.70', 'shinovadatabase.in','HMS.shinovadatabase.in','13.232.32.213']
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000","http://localhost:3001",'https://salemcosmeticclinic.netlify.app','https://shinovadatabase.in','https://HMS.shinovadatabase.in','https://www.HMS.shinova.in/']
 
+CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
